@@ -1,0 +1,16 @@
+/* Empty. Add your own CSS if you like */
+/*.flex-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}*/
+.div-child{
+margin: 5px;
+height: 80px;
+width: 60px;
+}
+.next-page{
+float: right;
+}
