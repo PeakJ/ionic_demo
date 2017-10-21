@@ -17,14 +17,14 @@ APP.controller('analyzeStreetCtrl', ['$scope', function ($scope) {
                     geocoder.getAddress(lnglatXY, function (status, result) {
                         if (status === 'complete' && result.info === 'OK') {
                             console.log(result.regeocode);
-                            if(newValue.length>0){
+                            if(oldValue&&newValue.length>0){
                                 $scope.$apply(function () {
                                     $scope.streetName = result.regeocode.addressComponent.township;
                                 })
                             }
                         } else {
                             console.log('获取位置失败');
-                            if(newValue.length>0){
+                            if(oldValue&&newValue.length>0){
                                 $scope.$apply(function () {
                                     $scope.streetName = '地址不够详细或者有误';
                                 })
@@ -33,7 +33,7 @@ APP.controller('analyzeStreetCtrl', ['$scope', function ($scope) {
                     });
                 } else {
                     console.log('未解析到相关街道');
-                    if(newValue.length>0){
+                    if(oldValue&&newValue.length>0){
                         $scope.$apply(function () {
                             $scope.streetName = '地址不够详细或者有误';
                         })
