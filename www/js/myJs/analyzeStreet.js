@@ -17,7 +17,7 @@ APP.controller('analyzeStreetCtrl', ['$scope', function ($scope) {
                     geocoder.getAddress(lnglatXY, function (status, result) {
                         if (status === 'complete' && result.info === 'OK') {
                             console.log(result.regeocode);
-                            if(oldValue&&newValue.length>0){
+                            if(newValue.length>0){
                                 $scope.$apply(function () {
                                     $scope.streetName = result.regeocode.addressComponent.township;
                                 })
