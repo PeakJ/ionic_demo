@@ -1,7 +1,5 @@
 APP.controller('tingyunCtrl', ['$scope', '$http', function ($scope, $http) {
     var page_event = null;
-    if (!TINGYUN) { var TINGYUN = {}; TINGYUN.createEvent = function () { var e = {}; e.end = function () { }; e.fail = function () { }; return e } };
-
     $scope.button1Click = function () {
         var event = TINGYUN.createEvent({
             name: '按钮1点击事件',
