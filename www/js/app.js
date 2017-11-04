@@ -50,6 +50,10 @@ APP.run(['$ionicPlatform',function ($ionicPlatform) {
         templateUrl: 'templates/myPage/qrCode.html',
         controller: 'qrCodeCtrl'
       })
+      .state('cube', {
+        url: '/cube',
+        templateUrl: 'templates/myPage/cube.html',
+      })
       .state('tingyun', {
         url: '/tingyun',
         templateUrl: 'templates/myPage/tingyun.html',
