@@ -1,6 +1,9 @@
 /* Empty. Add your own CSS if you like */
- /*------------------css魔方start-------------------*/
- .wrap {
+
+
+/*------------------css魔方start-------------------*/
+
+.wrap {
     width: 200px;
     height: 200px;
     margin: 200px auto;
@@ -62,7 +65,9 @@
     transform: rotateX(-90deg) translateZ(100px);
 }
 
+
 /*定义小正方体样式*/
+
 .cube span {
     display: block;
     width: 100px;
@@ -100,9 +105,9 @@
 .cube .in_bottom {
     transform: rotateX(-90deg) translateZ(50px);
 }
-    
-           
-            /* .cube:hover .out_front {
+
+
+/* .cube:hover .out_front {
                 transform: rotateY(0deg) translateZ(200px);
             }
     
@@ -125,12 +130,92 @@
             .cube:hover .out_bottom {
                 transform: rotateX(-90deg) translateZ(200px);
             } */
-            /*------------------css魔方start-------------------*/
-.div-child{
-margin: 5px;
-height: 80px;
-width: 60px;
+
+
+/*------------------css魔方end-------------------*/
+
+.div-child {
+    margin: 5px;
+    height: 80px;
+    width: 60px;
 }
-.next-page{
-float: right;
+
+.next-page {
+    float: right;
 }
+
+
+/*************************中奖纪录展示start************************/
+
+
+/*第一种*/
+
+.box {
+    width: 100%;
+    margin: auto;
+    background-color: #00b7ee;
+}
+
+.record_title {
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.2rem;
+    z-index: 2;
+    background-color: #00b7ee;
+    vertical-align: middle;
+}
+
+.record_list {
+    height: 11rem;
+    overflow: hidden;
+    background-color: #00b7ee;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+
+/*第二种*/
+
+.bcon {
+    width: 100%;
+    border: 30px solid #00b7ee;
+    position: absolute;
+    top: 30px;
+    border-radius: 20px;
+}
+
+.bcon h1 {
+    border-bottom: 1px solid #eee;
+    padding: 0 10px;
+    background: #00b7ee;
+}
+
+.bcon h1 b {
+    font: bold 14px/40px '宋体';
+    padding: 0 20px;
+    margin-top: -1px;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+}
+
+.list_lh {
+    height: 400px;
+    overflow: hidden;
+}
+
+.list_lh li {
+    padding: 10px;
+    background: #e5e5e5;
+    border-bottom: 1px solid #fff;
+}
+
+.list_lh li p {
+    height: 24px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+
+
+/*************************中奖纪录展示end************************/
