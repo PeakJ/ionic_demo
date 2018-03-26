@@ -2,7 +2,7 @@
 前端知识在ionic1上的尝试
 
 #目录结构
-├─.vscode
+```
 ├─hooks
 │  └─after_prepare
 ├─resources
@@ -58,3 +58,4 @@
     │      └─dist
     └─templates
         └─myPage
+```
